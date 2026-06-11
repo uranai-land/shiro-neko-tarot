@@ -106,6 +106,20 @@ function createCategoryButtons() {
   });
 }
 
+function getQuestionText(question) {
+  if (typeof question === 'string') {
+    return question;
+  }
+  if (question && typeof question === 'object' && typeof question.text === 'string') {
+    return question.text;
+  }
+  return '';
+}
+
+function isValidQuestion(question) {
+  return getQuestionText(question).trim() !== '';
+}
+
 function showCategory(key) {
   currentCategoryKey = key;
   currentCategory = menus[key];
@@ -118,11 +132,15 @@ function showCategory(key) {
   categoryLead.textContent = currentCategory.lead;
 
   questionList.innerHTML = '';
-  currentCategory.questions.forEach((text, index) => {
+  currentCategory.questions.forEach((question, index) => {
+    if (!isValidQuestion(question)) {
+      return;
+    }
+
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'question-btn';
-    btn.textContent = text;
+    btn.className = 'question-button';
+    btn.textContent = getQuestionText(question);
     btn.addEventListener('click', () => startReading(index));
     questionList.appendChild(btn);
   });
