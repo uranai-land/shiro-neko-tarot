@@ -125,7 +125,27 @@ html_code = """
             font-size: 14px;
             color: #9b8c82;
             letter-spacing: 3px;
-            margin-bottom: 58px;
+            margin-bottom: 8px;
+        }
+
+        .hero-note {
+            max-width: 760px;
+            margin: 0 auto 42px;
+            color: #6f625a;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .mini-tag {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid #eadfd8;
+            color: #7d6e63;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
         }
 
         .menu-icon {
@@ -216,7 +236,15 @@ html_code = """
         .category-lead {
             color: #8a7c73;
             font-size: 15px;
-            margin-bottom: 28px;
+            margin-bottom: 10px;
+        }
+
+        .category-note {
+            max-width: 760px;
+            margin: 0 auto 18px;
+            color: #6f625a;
+            font-size: 14px;
+            line-height: 1.8;
         }
 
         .small-back-button {
@@ -453,6 +481,47 @@ html_code = """
 
         .again-button:hover { background: #fff2f4; }
 
+        .pathway-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            max-width: 980px;
+            margin: 18px auto 8px;
+        }
+
+        .pathway-card {
+            border-radius: 18px;
+            border: 1px solid #e5d9cf;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 8px 18px rgba(120, 96, 80, 0.08);
+            padding: 16px;
+            text-align: left;
+        }
+
+        .pathway-card h4 {
+            margin: 0 0 8px;
+            color: #4a403a;
+            font-size: 17px;
+        }
+
+        .pathway-card p {
+            margin: 0 0 8px;
+            color: #64554d;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .pathway-chip {
+            display: inline-block;
+            border-radius: 999px;
+            border: 1px solid #e1d3c8;
+            background: #fff8f4;
+            color: #7d6e63;
+            padding: 5px 8px;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
         .notice {
             max-width: 720px;
             margin: 26px auto 0;
@@ -501,6 +570,7 @@ html_code = """
         <div class="cat-mark">🐾</div>
         <div class="site-title">白猫タロット</div>
         <div class="site-subtitle">WHITE CAT TAROT READING</div>
+        <div class="hero-note">まずは無料で軽く鑑定。結果を見たら、心を整える数珠・お守り・浄化アイテム、スピリチュアルグッズの選び方にも自然につながる導線を用意しています。</div>
 
         <div id="homeArea">
             <div class="home-grid">
@@ -514,6 +584,24 @@ html_code = """
                 <button class="main-button" onclick="showCategory('money')">金運</button>
             </div>
 
+            <div class="pathway-grid">
+                <div class="pathway-card">
+                    <div class="mini-tag">Step 1</div>
+                    <h4>無料で気分を整える</h4>
+                    <p>まずは気軽に鑑定から始めて、今の心のテーマを確認できます。</p>
+                </div>
+                <div class="pathway-card">
+                    <div class="mini-tag">Step 2</div>
+                    <h4>結果をやさしく活かす</h4>
+                    <p>鑑定結果を見たあと、心を整えたいときに自然につながる言葉をお届けします。</p>
+                </div>
+                <div class="pathway-card">
+                    <div class="mini-tag">Step 3</div>
+                    <h4>数珠・お守り・浄化アイテムへ</h4>
+                    <p>商品ページは後で追加予定ですが、今は「どのテーマを選ぶと自然か」を整えています。</p>
+                </div>
+            </div>
+
             <div class="footer-icons">🐾 ✦ ♡ ☽ ✦ 🐾</div>
             <div class="copyright">© 2026 WHITE CAT TAROT</div>
         </div>
@@ -521,6 +609,7 @@ html_code = """
         <div id="categoryArea" style="display: none;">
             <div class="category-title" id="categoryTitle"></div>
             <div class="category-lead" id="categoryLead"></div>
+            <div class="category-note">気になるテーマを選んでください。鑑定結果のあとに、数珠・お守り・浄化アイテムを選ぶ導線も自然につながるように整えています。</div>
             <button class="small-back-button" onclick="goHome()">最初の画面に戻る</button>
             <div class="question-grid" id="questionGrid"></div>
         </div>
@@ -543,6 +632,24 @@ html_code = """
                 <h2>鑑定結果</h2>
                 <div id="resultCards"></div>
                 <div class="fortune-message" id="fortuneMessage"></div>
+                <div class="pathway-grid">
+                    <div class="pathway-card">
+                        <div class="pathway-chip">数珠</div>
+                        <h4>心を整える一歩</h4>
+                        <p>静かな時間を増やしたいときに、数珠のある暮らしが自然に合うテーマです。</p>
+                    </div>
+                    <div class="pathway-card">
+                        <div class="pathway-chip">お守り</div>
+                        <h4>安心を選ぶ</h4>
+                        <p>不安が少し減るように、日々の安心感を支えるアイテムとしておすすめです。</p>
+                    </div>
+                    <div class="pathway-card">
+                        <div class="pathway-chip">浄化アイテム</div>
+                        <h4>気分のリセット</h4>
+                        <p>気持ちを軽くしたいとき、浄化アイテムを生活の中に取り入れる流れも自然です。</p>
+                    </div>
+                </div>
+                <p class="guide">商品ページは今後追加予定です。まずはこの導線を軸に、鑑定結果から気持ちのテーマを選ぶ流れを整えています。</p>
                 <button class="again-button" onclick="restartSameReading()">もう一度占う</button>
             </div>
 
@@ -1027,7 +1134,8 @@ html_code = """
         }
 
         function makeFortuneMessage() {
-            fortuneMessage.innerHTML = makeSpecificReading();
+            fortuneMessage.innerHTML = makeSpecificReading() +
+                "<br><br><strong>次の一歩</strong><br>鑑定結果を見て、心を整えたいと感じたら、数珠・お守り・浄化アイテムが自然な一歩になります。商品ページは今後追加予定です。";
         }
     </script>
 </body>
