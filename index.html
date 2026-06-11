@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="白猫タロットの静的な占いサイト。GitHub Pagesで公開できます。" />
+    <title>白猫タロット</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero-card">
+        <p class="eyebrow">WHITE CAT TAROT</p>
+        <h1>白猫タロット</h1>
+        <p class="lead">
+          ふわりとやさしい雰囲気で、恋愛・結婚・金運まで、今日の気持ちに寄り添う占いをお届けします。
+        </p>
+        <img class="hero-image" src="images/hero-cat.svg" alt="白猫と星のイラスト" />
+      </header>
+
+      <section id="homePanel" class="panel">
+        <div class="section-heading">
+          <p class="mini-label">テーマを選ぶ</p>
+          <h2>今の気持ちに合う占いを選んでください</h2>
+        </div>
+        <div id="categoryGrid" class="category-grid"></div>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>やさしい流れ</h3>
+            <p>テーマを選んで、カードをシャッフルして、結果を見るだけ。とても軽い気分でお楽しみください。</p>
+          </article>
+          <article class="info-card">
+            <h3>GitHub Pages対応</h3>
+            <p>StreamlitやPythonは使わず、ブラウザだけで動く静的サイトとして公開できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="categoryPanel" class="panel hidden">
+        <button id="backHomeBtn" class="ghost-button" type="button">最初の画面へ戻る</button>
+        <div class="section-heading compact">
+          <p class="mini-label">質問を選ぶ</p>
+          <h2 id="categoryTitle"></h2>
+          <p id="categoryLead" class="lead-text"></p>
+        </div>
+        <div id="questionList" class="question-list"></div>
+      </section>
+
+      <section id="readingPanel" class="panel hidden">
+        <button id="backCategoryBtn" class="ghost-button" type="button">質問一覧へ戻る</button>
+        <div class="section-heading compact">
+          <p class="mini-label">カード占い</p>
+          <h2 id="readingTitle"></h2>
+          <p id="readingQuestion" class="lead-text"></p>
+        </div>
+
+        <div id="beforeStage" class="reading-stage">
+          <div id="shuffleStage" class="shuffle-stage" aria-live="polite"></div>
+          <p class="guide-text">カードがふわっと揺れています。心を落ち着けたら Stop を押してね。</p>
+          <button id="stopBtn" class="stop-button" type="button">Stop</button>
+        </div>
+
+        <div id="resultStage" class="result-stage hidden">
+          <h3>鑑定結果</h3>
+          <div id="resultCards" class="result-grid"></div>
+          <article id="fortuneMessage" class="fortune-card"></article>
+          <button id="againBtn" class="primary-button" type="button">もう一度占う</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="白猫と星のイラスト">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff6fb"/>
+      <stop offset="100%" stop-color="#edf6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="32" fill="url(#bg)"/>
+  <circle cx="74" cy="58" r="10" fill="#fff" opacity="0.95"/>
+  <circle cx="252" cy="44" r="8" fill="#fff" opacity="0.95"/>
+  <circle cx="218" cy="98" r="7" fill="#fff" opacity="0.92"/>
+  <path d="M67 122c18-45 58-68 104-68 48 0 90 26 102 68-12 36-50 64-102 64-54 0-92-28-104-64z" fill="#fff" opacity="0.92"/>
+  <path d="M96 116c13-22 29-33 49-33 24 0 44 13 56 33-12 19-30 32-56 32-21 0-40-11-49-32z" fill="#f4dbe5"/>
+  <circle cx="124" cy="112" r="8" fill="#5b4b5e"/>
+  <circle cx="196" cy="112" r="8" fill="#5b4b5e"/>
+  <path d="M147 146c17 10 29 10 47 0" fill="none" stroke="#a77d99" stroke-width="4" stroke-linecap="round"/>
+  <path d="M100 86c11-19 24-28 45-30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M220 86c-11-19-24-28-46-30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M145 56c0-20 13-35 33-35 18 0 33 14 33 35" fill="none" stroke="#ffd8e7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M115 72l-33 10" stroke="#f0bfda" stroke-width="5" stroke-linecap="round"/>
+  <path d="M205 72l33 10" stroke="#f0bfda" stroke-width="5" stroke-linecap="round"/>
+  <path d="M143 160c0 27 18 36 39 36 19 0 39-9 39-36" fill="none" stroke="#e0c6da" stroke-width="6" stroke-linecap="round"/>
+</svg>
