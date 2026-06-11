@@ -1,25 +1,26 @@
 const cards = [
-  { name: '愚者', upright: '自由、始まり、可能性、冒険', reversed: '無計画、軽率、不安定、迷い' },
-  { name: '魔術師', upright: '行動力、才能、創造、チャンス', reversed: '準備不足、自信のなさ、空回り' },
-  { name: '女教皇', upright: '直感、冷静、知性、秘密', reversed: '考えすぎ、不安、閉鎖的' },
-  { name: '女帝', upright: '愛情、豊かさ、魅力、実り', reversed: '甘え、依存、わがまま' },
-  { name: '皇帝', upright: '安定、責任、リーダーシップ、現実性', reversed: '頑固、支配的、プレッシャー' },
-  { name: '恋人', upright: '恋愛、選択、調和、ときめき', reversed: '迷い、優柔不断、すれ違い' },
-  { name: '戦車', upright: '前進、勝利、勢い、決断', reversed: '暴走、焦り、空回り' },
-  { name: '力', upright: '優しさ、忍耐、信頼、内面の強さ', reversed: '自信喪失、我慢しすぎ、不安' },
-  { name: '隠者', upright: '内省、慎重、探求、答えを探す', reversed: '孤独、閉じこもり、考えすぎ' },
-  { name: '運命の輪', upright: '転機、チャンス、流れの変化', reversed: '停滞、タイミングのズレ、予想外' },
-  { name: '正義', upright: '公平、判断、バランス、誠実', reversed: '不公平、迷い、偏った判断' },
-  { name: '吊るされた男', upright: '忍耐、視点の変化、試練、気づき', reversed: '報われない我慢、停滞、無理' },
-  { name: '死神', upright: '終わりと再生、変化、区切り', reversed: '変化への抵抗、未練、停滞' },
-  { name: '節制', upright: '調和、回復、自然体、バランス', reversed: '不安定、無理、乱れ' },
-  { name: '悪魔', upright: '執着、誘惑、依存、本音', reversed: '解放、断ち切る、目が覚める' },
-  { name: '塔', upright: '衝撃、崩壊、急な変化、目覚め', reversed: '小さな崩れ、変化を避ける、不安' },
-  { name: '星', upright: '希望、癒し、未来、願い', reversed: '失望、自信不足、期待しすぎ' },
-  { name: '月', upright: '不安、迷い、直感、曖昧さ', reversed: '真実が見える、不安が晴れる' },
-  { name: '太陽', upright: '成功、喜び、明るさ、祝福', reversed: '一時的な不調、子どもっぽさ、油断' },
-  { name: '審判', upright: '復活、決断、再スタート、気づき', reversed: '迷い、後悔、決めきれない' },
-  { name: '世界', upright: '完成、達成、満足、一区切り', reversed: '未完成、中途半端、あと一歩' },
+  { id: 'fool', number: 0, name: '愚者', image: './cards/00_fool.png', upright: '自由、始まり、可能性、冒険', reversed: '無計画、軽率、不安定、迷い' },
+  { id: 'magician', number: 1, name: '魔術師', image: './cards/01_magician.png', upright: '行動力、才能、創造、チャンス', reversed: '準備不足、自信のなさ、空回り' },
+  { id: 'high-priestess', number: 2, name: '女教皇', image: './cards/02_high_priestess.png', upright: '直感、冷静、知性、秘密', reversed: '考えすぎ、不安、閉鎖的' },
+  { id: 'empress', number: 3, name: '女帝', image: './cards/03_empress.png', upright: '愛情、豊かさ、魅力、実り', reversed: '甘え、依存、わがまま' },
+  { id: 'emperor', number: 4, name: '皇帝', image: './cards/04_emperor.png', upright: '安定、責任、リーダーシップ、現実性', reversed: '頑固、支配的、プレッシャー' },
+  { id: 'hierophant', number: 5, name: '教皇', image: './cards/05_hierophant.png', upright: '伝統、支援、教え、安心', reversed: '独自性、固定観念、閉塞感' },
+  { id: 'lovers', number: 6, name: '恋人', image: './cards/06_lovers.png', upright: '恋愛、選択、調和、ときめき', reversed: '迷い、優柔不断、すれ違い' },
+  { id: 'chariot', number: 7, name: '戦車', image: './cards/07_chariot.png', upright: '前進、勝利、勢い、決断', reversed: '暴走、焦り、空回り' },
+  { id: 'strength', number: 8, name: '力', image: './cards/08_strength.png', upright: '優しさ、忍耐、信頼、内面の強さ', reversed: '自信喪失、我慢しすぎ、不安' },
+  { id: 'hermit', number: 9, name: '隠者', image: './cards/09_hermit.png', upright: '内省、慎重、探求、答えを探す', reversed: '孤独、閉じこもり、考えすぎ' },
+  { id: 'wheel-of-fortune', number: 10, name: '運命の輪', image: './cards/10_wheel_of_fortune.png', upright: '転機、チャンス、流れの変化', reversed: '停滞、タイミングのズレ、予想外' },
+  { id: 'justice', number: 11, name: '正義', image: './cards/11_justice.png', upright: '公平、判断、バランス、誠実', reversed: '不公平、迷い、偏った判断' },
+  { id: 'hanged-man', number: 12, name: '吊るされた男', image: './cards/12_hanged_man.png', upright: '忍耐、視点の変化、試練、気づき', reversed: '報われない我慢、停滞、無理' },
+  { id: 'death', number: 13, name: '死神', image: './cards/13_death.png', upright: '終わりと再生、変化、区切り', reversed: '変化への抵抗、未練、停滞' },
+  { id: 'temperance', number: 14, name: '節制', image: './cards/14_temperance.png', upright: '調和、回復、自然体、バランス', reversed: '不安定、無理、乱れ' },
+  { id: 'devil', number: 15, name: '悪魔', image: './cards/15_devil.png', upright: '執着、誘惑、依存、本音', reversed: '解放、断ち切る、目が覚める' },
+  { id: 'tower', number: 16, name: '塔', image: './cards/16_tower.png', upright: '衝撃、崩壊、急な変化、目覚め', reversed: '小さな崩れ、変化を避ける、不安' },
+  { id: 'star', number: 17, name: '星', image: './cards/17_star.png', upright: '希望、癒し、未来、願い', reversed: '失望、自信不足、期待しすぎ' },
+  { id: 'moon', number: 18, name: '月', image: './cards/18_moon.png', upright: '不安、迷い、直感、曖昧さ', reversed: '真実が見える、不安が晴れる' },
+  { id: 'sun', number: 19, name: '太陽', image: './cards/19_sun.png', upright: '成功、喜び、明るさ、祝福', reversed: '一時的な不調、子どもっぽさ、油断' },
+  { id: 'judgement', number: 20, name: '審判', image: './cards/20_judgement.png', upright: '復活、決断、再スタート、気づき', reversed: '迷い、後悔、決めきれない' },
+  { id: 'world', number: 21, name: '世界', image: './cards/21_world.png', upright: '完成、達成、満足、一区切り', reversed: '未完成、中途半端、あと一歩' },
 ];
 
 const menus = {
@@ -178,6 +179,7 @@ function pickRandomCards(count) {
     const direction = Math.random() < 0.5 ? '正位置' : '逆位置';
     result.push({
       name: card.name,
+      image: card.image,
       direction,
       meaning: direction === '正位置' ? card.upright : card.reversed,
     });
@@ -221,10 +223,15 @@ function stopShuffle() {
 
   resultCards.innerHTML = '';
   currentCards.forEach((card, index) => {
-    const label = ['第一のメッセージ', '第二のメッセージ', '第三のメッセージ'][index] || 'カード';
+    const label = ['過去', '現在', '未来'][index] || 'カード';
     const item = document.createElement('article');
     item.className = 'result-card';
-    item.innerHTML = `<h3>${label}：${card.name}（${card.direction}）</h3><p><strong>意味：</strong>${card.meaning}</p>`;
+    item.innerHTML = `
+      <p class="result-step">${label}</p>
+      <img src="${card.image || './cards/00_fool.png'}" alt="${card.name}のカード画像" onerror="this.onerror=null;this.src='./cards/00_fool.png';" />
+      <h3>${card.name} / ${card.direction}</h3>
+      <p><strong>意味：</strong>${card.meaning}</p>
+    `;
     resultCards.appendChild(item);
   });
 
