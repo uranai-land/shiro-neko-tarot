@@ -22,17 +22,42 @@
         <div class="intro-box">
           <p>白猫タロットへようこそ。</p>
           <p>リリーとリンが、今のあなたに必要なメッセージを1枚のカードでやさしく届けます。</p>
-          <p>気持ちを整えて、カードを1枚引いてみてください。</p>
+          <p>今知りたいことをひとつ選んで、カードを引いてみてください。</p>
         </div>
 
-        <button id="startBtn" class="main-button">カードを1枚引く</button>
+        <div class="reading-menu" aria-label="占いメニュー">
+          <button class="reading-button" data-reading="feelings">
+            <span class="reading-title">あの人の気持ちは？</span>
+            <span class="reading-desc">相手があなたをどう感じているかを読み解きます。</span>
+          </button>
+
+          <button class="reading-button" data-reading="marriage">
+            <span class="reading-title">婚期はいつ？</span>
+            <span class="reading-desc">結婚につながる流れや、今整えることを見ます。</span>
+          </button>
+
+          <button class="reading-button" data-reading="reunion">
+            <span class="reading-title">復縁できる？</span>
+            <span class="reading-desc">もう一度関係が動く可能性と、今できる一歩を見ます。</span>
+          </button>
+
+          <button class="reading-button" data-reading="money">
+            <span class="reading-title">金運が上がる時期はいつ？</span>
+            <span class="reading-desc">お金の流れが良くなるタイミングと行動を見ます。</span>
+          </button>
+
+          <button class="reading-button" data-reading="work">
+            <span class="reading-title">今の仕事は私に向いている？</span>
+            <span class="reading-desc">今の仕事との相性や、これからの働き方を見ます。</span>
+          </button>
+        </div>
       </header>
     </section>
 
     <section id="shuffleScreen" class="screen">
       <div class="simple-panel">
-        <h2>カードを整えています</h2>
-        <p class="lead-text">
+        <h2 id="shuffleTitle">カードを整えています</h2>
+        <p id="shuffleText" class="lead-text">
           リリーとリンが今のあなたに必要なカードを選んでいます。<br />
           心が落ち着いたら Stop を押してください。
         </p>
@@ -57,7 +82,7 @@
 
     <section id="resultScreen" class="screen">
       <div class="result-panel">
-        <p class="small-label">今日の1枚</p>
+        <p id="resultCategoryLabel" class="small-label">今日の1枚</p>
         <h2 id="resultTitle">今のあなたへのメッセージ</h2>
 
         <div class="result-card-layout">
@@ -82,7 +107,7 @@
             </div>
 
             <div class="message-box">
-              <h3>今のあなたへのメッセージ</h3>
+              <h3 id="messageHeading">今のあなたへのメッセージ</h3>
               <p id="cardMessage"></p>
             </div>
 
@@ -93,13 +118,13 @@
           </div>
         </div>
 
-        <button id="againBtn" class="main-button secondary-button">もう一度引く</button>
+        <button id="againBtn" class="main-button secondary-button">もう一度占う</button>
       </div>
     </section>
 
     <footer class="site-footer">
       <p>※この占いは娯楽・自己理解を目的としたものです。</p>
-      <p>※結果は未来を断定するものではありません。</p>
+      <p>※結果は未来や相手の気持ちを断定するものではありません。</p>
       <p>※医療・法律・投資・人生の重要な判断については、専門家や信頼できる方にご相談ください。</p>
     </footer>
   </div>
