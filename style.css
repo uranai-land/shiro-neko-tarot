@@ -307,10 +307,10 @@ h1 {
 .shuffle-stage {
   position: relative;
   width: min(100%, 420px);
+  max-width: 420px;
   min-height: 300px;
   height: 320px;
-  margin-top: 8px;
-  margin-bottom: 24px;
+  margin: 8px auto 24px;
   padding-bottom: 8px;
 }
 
@@ -320,6 +320,8 @@ h1 {
   top: 50%;
   width: 118px;
   height: 176px;
+  transform-origin: center center;
+}
   border-radius: 18px;
   border: 1px solid #efe3e7;
   background: linear-gradient(145deg, #fff, #fff7fb);

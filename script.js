@@ -195,17 +195,17 @@ function renderShuffleVisual() {
     const token = document.createElement('div');
     token.className = 'card-token';
     const spread = phase < 5 ? 1 : -1;
-    const baseX = (i - 3) * 10 * spread;
-    const randomX = (Math.random() - 0.5) * 52;
-    const randomY = (Math.random() - 0.5) * 32;
-    const liftY = i % 2 === 0 ? -10 : 10;
-    const rotate = (Math.random() - 0.5) * 28 + (i - 3) * 3.2;
+    const baseX = 0;
+    const randomX = Math.random() * 80 - 40;
+    const randomY = (Math.random() - 0.5) * 24;
+    const liftY = i % 2 === 0 ? -8 : 8;
+    const rotate = (Math.random() - 0.5) * 24 + (i - 3) * 2.2;
     const scale = 1 - i * 0.025;
-    const moveSide = phase === 2 || phase === 7 ? (i % 2 === 0 ? -28 : 28) : 0;
+    const moveSide = 0;
 
     token.style.zIndex = String(20 + i);
     token.style.opacity = String(0.98 - i * 0.075);
-    token.style.transform = `translate(${baseX + randomX + moveSide}px, ${randomY + liftY}px) rotate(${rotate}deg) scale(${scale})`;
+    token.style.transform = `translate(-50%, -50%) translate(${baseX + randomX + moveSide}px, ${randomY + liftY}px) rotate(${rotate}deg) scale(${scale})`;
     shuffleStage.appendChild(token);
   }
 }
