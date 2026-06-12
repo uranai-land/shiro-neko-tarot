@@ -1,97 +1,104 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="白猫タロットは、恋愛・結婚・復縁・金運などの気持ちに寄り添う、やさしいカード占いサイトです。"
-    />
-    <title>白猫タロット</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="page-shell">
-      <header class="hero-card">
-        <p class="eyebrow">WHITE CAT TAROT</p>
-        <h1>白猫タロット</h1>
-        <p class="lead intro-copy">
-          白猫タロットへようこそ。リリーとリンが、3枚のカードで今の悩みを「過去・現在・未来」からやさしく読み解きます。
-        </p>
-        <img class="hero-banner" src="assets/banner.png" alt="リリーとリンの横長バナー" />
-        <p class="lead support-copy">
-          カードは未来を決めつけるものではなく、今の状況を整理し、次にどう行動すればよいかを見つけるための小さな道しるべです。
-        </p>
-        <div class="info-grid hero-info-grid">
-          <article class="info-card soft-card">
-            <h3>やさしいメッセージ</h3>
-            <p>恋愛・結婚・復縁・禁断の恋・金運まで、あなたの気持ちにふわりと寄り添うカードの流れです。</p>
-          </article>
-          <article class="info-card soft-card">
-            <h3>3枚で読み解く</h3>
-            <p>過去に何があったのか、今の心の状態、そしてこれからの行動のヒントを、やさしく整理してお届けします。</p>
-          </article>
-        </div>
-      </header>
+<div id="app">
+  <section id="homeScreen" class="screen active">
+    <header class="hero">
+      <h1>白猫タロット</h1>
 
-      <section id="homePanel" class="panel">
-        <div class="section-heading">
-          <p class="mini-label">テーマを選ぶ</p>
-          <h2>今の気持ちに合うテーマを選んでください</h2>
-          <p class="lead-text">恋愛・結婚・復縁・禁断の恋・金運の中から、気になるものを選んで、カードをシャッフルしてみましょう。</p>
-        </div>
-        <div id="categoryGrid" class="category-grid"></div>
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>占いの流れ</h3>
-            <p>テーマを選んだら、カードをシャッフルして Stop を押すだけ。結果はやさしく、今のあなたに向けたヒントとしてお伝えします。</p>
-          </article>
-          <article class="info-card">
-            <h3>大切にしたいこと</h3>
-            <p>カードは未来を決めつけるものではなく、今の状況を整理し、次にどう行動すればよいかを見つけるための小さな道しるべです。</p>
-          </article>
-        </div>
-      </section>
+```
+  <img
+    class="site-banner"
+    src="assets/banner.png"
+    alt="白猫タロット リリーとリン"
+  />
 
-      <section id="categoryPanel" class="panel hidden">
-        <button id="backHomeBtn" class="ghost-button" type="button">最初の画面へ戻る</button>
-        <div class="section-heading compact">
-          <p class="mini-label">質問を選ぶ</p>
-          <h2 id="categoryTitle"></h2>
-          <p id="categoryLead" class="lead-text"></p>
-        </div>
-        <div id="questionList" class="question-list"></div>
-      </section>
+  <div class="intro-box">
+    <p>白猫タロットへようこそ。</p>
+    <p>リリーとリンが、今のあなたに必要なメッセージを1枚のカードでやさしく届けます。</p>
+    <p>気持ちを整えて、カードを1枚引いてみてください。</p>
+  </div>
 
-      <section id="readingPanel" class="panel hidden">
-        <button id="backCategoryBtn" class="ghost-button" type="button">質問一覧へ戻る</button>
-        <div class="section-heading compact">
-          <p class="mini-label">カード占い</p>
-          <h2 id="readingTitle"></h2>
-          <p id="readingQuestion" class="lead-text"></p>
-        </div>
+  <button id="startBtn" class="main-button">カードを1枚引く</button>
+</header>
+```
 
-        <div id="beforeStage" class="reading-stage">
-          <div id="shuffleStage" class="shuffle-stage" aria-live="polite"></div>
-          <p class="guide-text">カードがふわっと揺れています。心を落ち着けたら Stop を押してね。</p>
-          <button id="stopBtn" class="stop-button" type="button">Stop</button>
-        </div>
+  </section>
 
-        <div id="resultStage" class="result-stage hidden">
-          <h3>鑑定結果</h3>
-          <div id="resultCards" class="result-grid"></div>
-          <article id="fortuneMessage" class="fortune-card"></article>
-          <button id="againBtn" class="primary-button" type="button">もう一度占う</button>
-        </div>
-      </section>
-    </main>
+  <section id="shuffleScreen" class="screen">
+    <div class="simple-panel">
+      <h2>カードを整えています</h2>
+      <p class="lead-text">
+        リリーとリンが今のあなたに必要なカードを選んでいます。<br />
+        心が落ち着いたら Stop を押してください。
+      </p>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+```
+  <div class="shuffle-card-area" aria-label="シャッフル中のカード">
+    <div class="shuffle-card card-1"></div>
+    <div class="shuffle-card card-2"></div>
+    <div class="shuffle-card card-3"></div>
+    <div class="shuffle-card card-4"></div>
+    <div class="shuffle-card card-5"></div>
+    <div class="shuffle-card card-6"></div>
+    <div class="shuffle-card card-7"></div>
+    <div class="shuffle-card card-8"></div>
+    <div class="shuffle-card card-9"></div>
+  </div>
+
+  <div class="stop-button-wrap">
+    <button id="stopBtn" class="main-button stop-button">Stop</button>
+  </div>
+</div>
+```
+
+  </section>
+
+  <section id="resultScreen" class="screen">
+    <div class="result-panel">
+      <p class="small-label">今日の1枚</p>
+      <h2 id="resultTitle">今のあなたへのメッセージ</h2>
+
+```
+  <div class="result-card-layout">
+    <div class="card-image-wrap">
+      <img id="resultCardImage" class="result-card-image" src="" alt="タロットカード" />
+    </div>
+
+    <div class="result-text">
+      <div class="result-row">
+        <span class="result-label">カード名</span>
+        <strong id="cardName"></strong>
+      </div>
+
+      <div class="result-row">
+        <span class="result-label">向き</span>
+        <strong id="cardDirection"></strong>
+      </div>
+
+      <div class="message-box">
+        <h3>カードが示す意味</h3>
+        <p id="cardMeaning"></p>
+      </div>
+
+      <div class="message-box">
+        <h3>今のあなたへのメッセージ</h3>
+        <p id="cardMessage"></p>
+      </div>
+
+      <div class="message-box">
+        <h3>今日のアドバイス</h3>
+        <p id="cardAdvice"></p>
+      </div>
+    </div>
+  </div>
+
+  <button id="againBtn" class="main-button secondary-button">もう一度引く</button>
+</div>
+```
+
+  </section>
+
+  <footer class="site-footer">
+    <p>※この占いは娯楽・自己理解を目的としたものです。</p>
+    <p>※結果は未来を断定するものではありません。</p>
+    <p>※医療・法律・投資・人生の重要な判断については、専門家や信頼できる方にご相談ください。</p>
+  </footer>
+</div>
