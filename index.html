@@ -27,7 +27,7 @@
 
         <div class="reading-menu" aria-label="占いメニュー">
           <button class="reading-button circle-button" data-reading="feelings">
-            あの人の気持ちは？
+            あの人の<br />気持ちは？
           </button>
 
           <button class="reading-button circle-button" data-reading="marriage">
@@ -35,7 +35,7 @@
           </button>
 
           <button class="reading-button circle-button" data-reading="money">
-            金運が上がる時期はいつ？
+            金運が上がる<br />時期はいつ？
           </button>
 
           <button class="reading-button circle-button" data-reading="reunion">
@@ -46,32 +46,41 @@
             今の仕事は<br />私に向いている？
           </button>
         </div>
+
+        <section
+          class="ad-area ad-area-text"
+          style="text-align: center; width: min(100%, 760px); margin: 34px auto 8px; padding: 18px 20px; background: rgba(255, 255, 255, 0.62); border: 1px solid rgba(120, 90, 120, 0.08); border-radius: 22px;"
+        >
+          <p style="font-size: 13px; color: #8a7f93; margin-bottom: 8px;">広告・PR</p>
+          <a
+            href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+1OQA0Y+2PEO+BYLJM"
+            rel="nofollow"
+            style="color: #5c5168; font-weight: 700; line-height: 1.8; text-decoration: none;"
+          >
+            テレビや雑誌で話題の【ココナラ】電話占いが１分100円から
+          </a>
+          <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7QWV+1OQA0Y+2PEO+BYLJM" alt="">
+        </section>
       </header>
     </section>
 
     <section id="shuffleScreen" class="screen">
       <div class="simple-panel">
-        <h2 id="shuffleTitle">カードを整えています</h2>
-        <p id="shuffleText" class="lead-text">
-          リリーとリンが今のあなたに必要なカードを選んでいます。<br />
-          心が落ち着いたら Stop を押してください。
-        </p>
+        <p id="shuffleText" style="display: none;"></p>
 
-        <div class="shuffle-card-area" aria-label="シャッフル中のカード">
-          <div class="shuffle-card card-1"></div>
-          <div class="shuffle-card card-2"></div>
-          <div class="shuffle-card card-3"></div>
-          <div class="shuffle-card card-4"></div>
-          <div class="shuffle-card card-5"></div>
-          <div class="shuffle-card card-6"></div>
-          <div class="shuffle-card card-7"></div>
-          <div class="shuffle-card card-8"></div>
-          <div class="shuffle-card card-9"></div>
-        </div>
-
-        <div class="stop-button-wrap">
-          <button id="stopBtn" class="main-button stop-button">Stop</button>
-        </div>
+        <button
+          id="stopBtn"
+          type="button"
+          onclick="stopShuffle()"
+          aria-label="カードをシャッフルしています。クリックして結果を見る"
+          style="display: block; width: min(100%, 900px); margin: 0 auto 22px; padding: 0; border: none; background: transparent; cursor: pointer;"
+        >
+          <img
+            src="assets/shuffle-click.png"
+            alt="カードをシャッフルしています"
+            style="display: block; width: 100%; height: auto; border-radius: 24px; box-shadow: 0 18px 50px rgba(120, 90, 120, 0.12);"
+          />
+        </button>
       </div>
     </section>
 
@@ -114,7 +123,29 @@
         </div>
 
         <button id="againBtn" class="main-button secondary-button">もう一度占う</button>
+
+        <section
+          class="ad-area ad-area-result"
+          style="text-align: center; margin: 38px auto 8px; padding: 20px 0;"
+        >
+          <p style="font-size: 13px; color: #8a7f93; margin-bottom: 10px;">広告・PR</p>
+          <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWX+BG00XU+4PWE+5ZEMP" rel="nofollow">
+            <img border="0" width="300" height="250" alt="広告" src="https://www28.a8.net/svt/bgt?aid=260701953692&wid=003&eno=01&mid=s00000022019001005000&mc=1">
+          </a>
+          <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B7QWX+BG00XU+4PWE+5ZEMP" alt="">
+        </section>
       </div>
+    </section>
+
+    <section
+      class="ad-area ad-area-bottom"
+      style="text-align: center; margin: 36px auto 24px; padding: 20px 0;"
+    >
+      <p style="font-size: 13px; color: #8a7f93; margin-bottom: 10px;">広告・PR</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+J1XOI+4WPO+601S1" rel="nofollow">
+        <img border="0" width="300" height="250" alt="広告" src="https://www25.a8.net/svt/bgt?aid=260701951032&wid=003&eno=01&mid=s00000022902001008000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7QWV+J1XOI+4WPO+601S1" alt="">
     </section>
 
     <footer class="site-footer">
