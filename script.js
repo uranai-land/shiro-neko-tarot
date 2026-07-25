@@ -314,7 +314,7 @@ const readingTypes = {
     label: "あの人の気持ちは？",
     resultTitle: "あの人の気持ち",
     messageHeading: "あの人があなたに感じていること",
-    shuffleText: "リリーとリンが、あの人の心に近いカードを選んでいます。心が落ち着いたら Stop を押してください。",
+    shuffleText: "リリンとリンが、あの人の心に近いカードを選んでいます。心が落ち着いたら Stop を押してください。",
     createMessage(card, data, directionText) {
       if (directionText === "正位置") {
         return `${card.name}のカードは、あの人の中にある自然な印象を表しています。あなたに対して、どこか話しやすさや気になる感覚を持っている可能性があります。まだはっきりした恋心として形になっていなくても、あなたの存在は相手の心に残りやすいようです。急に距離を詰めるより、安心して接する時間を増やすことで、関係は少しずつやわらかく育っていきそうです。`;
@@ -335,7 +335,7 @@ const readingTypes = {
     label: "婚期はいつ？",
     resultTitle: "結婚につながる流れ",
     messageHeading: "婚期に向けた今の流れ",
-    shuffleText: "リリーとリンが、結婚につながるタイミングのカードを選んでいます。心が落ち着いたら Stop を押してください。",
+    shuffleText: "リリンとリンが、結婚につながるタイミングのカードを選んでいます。心が落ち着いたら Stop を押してください。",
     createMessage(card, data, directionText) {
       if (directionText === "正位置") {
         return `${card.name}のカードは、結婚に向けた流れが少しずつ動き出していることを示しています。婚期は、ただ待つだけでなく、あなたの心が未来に向いたときに近づいてきます。今は出会いや関係を難しく考えすぎず、自然に安心できる人とのつながりを大切にするとよい時期です。`;
@@ -356,7 +356,7 @@ const readingTypes = {
     label: "復縁できる？",
     resultTitle: "復縁の可能性",
     messageHeading: "復縁に向けた今の流れ",
-    shuffleText: "リリーとリンが、復縁に向けた今の流れをカードで見ています。心が落ち着いたら Stop を押してください。",
+    shuffleText: "リリンとリンが、復縁に向けた今の流れをカードで見ています。心が落ち着いたら Stop を押してください。",
     createMessage(card, data, directionText) {
       if (directionText === "正位置") {
         return `${card.name}のカードは、復縁に向けてまだ可能性が残っていることを示しています。ただし、無理に答えを急ぐより、関係を穏やかに整え直すことが大切です。相手の気持ちを動かす鍵は、強く迫ることではなく、以前より落ち着いたあなたを見せることにありそうです。`;
@@ -377,7 +377,7 @@ const readingTypes = {
     label: "金運が上がる時期はいつ？",
     resultTitle: "金運が上がる流れ",
     messageHeading: "お金の流れが良くなるタイミング",
-    shuffleText: "リリーとリンが、あなたの金運の流れをカードで見ています。心が落ち着いたら Stop を押してください。",
+    shuffleText: "リリンとリンが、あなたの金運の流れをカードで見ています。心が落ち着いたら Stop を押してください。",
     createMessage(card, data, directionText) {
       if (directionText === "正位置") {
         return `${card.name}のカードは、金運が上向きに整いやすい流れを示しています。大きな幸運をただ待つより、今あるお金の使い方や、仕事での動き方を見直すことで流れが良くなりそうです。収入のチャンスは、行動した人に届きやすい時です。`;
@@ -398,7 +398,7 @@ const readingTypes = {
     label: "今の仕事は私に向いている？",
     resultTitle: "今の仕事との相性",
     messageHeading: "仕事に対する今の答え",
-    shuffleText: "リリーとリンが、今の仕事とあなたの相性をカードで見ています。心が落ち着いたら Stop を押してください。",
+    shuffleText: "リリンとリンが、今の仕事とあなたの相性をカードで見ています。心が落ち着いたら Stop を押してください。",
     createMessage(card, data, directionText) {
       if (directionText === "正位置") {
         return `${card.name}のカードは、今の仕事の中にあなたが活かせる力があることを示しています。すべてが楽というわけではなくても、経験を重ねることで自分の強みが育っていく可能性があります。今の仕事に意味を感じられる部分があるなら、そこを伸ばしていく価値がありそうです。`;
