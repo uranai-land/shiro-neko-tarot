@@ -4,27 +4,27 @@ const tarotCards = [
     image: "cards/00_fool.png",
     upright: {
       meaning: "自由、新しい始まり、可能性、軽やかな一歩。",
-      baseMessage: "今のあなたには、まだ形になっていない可能性が広がっています。完璧な準備を待つより、小さく始めることで流れが動き出しそうです。",
-      advice: "今日は考えすぎず、まず一歩だけ動いてみましょう。小さな挑戦が、次の扉を開く鍵になります。"
+      baseMessage: "愚者のカードは、気持ちを軽くして新しい流れに入ることを示しています。完璧な答えを待つより、小さく動くことで道が開けていきそうです。",
+      advice: "考えすぎず、今日できる小さな一歩を選んでみましょう。"
     },
     reversed: {
-      meaning: "迷い、準備不足、無計画、落ち着きのなさ。",
-      baseMessage: "気持ちが先に走りすぎて、足元が少し見えにくくなっているかもしれません。焦らなくても大丈夫です。",
-      advice: "今日は大きな決断より、情報整理を優先しましょう。持ち物、予定、気持ちを整えると進みやすくなります。"
+      meaning: "迷い、準備不足、落ち着きのなさ、空回り。",
+      baseMessage: "愚者の逆位置は、少し気持ちが先に走っていることを示しています。急いで決めるより、足元を整えることで安心して進めるようになります。",
+      advice: "今日は大きく動かず、予定や気持ちを整理する時間を作りましょう。"
     }
   },
   {
     name: "魔術師",
     image: "cards/01_magician.png",
     upright: {
-      meaning: "始動、才能、工夫、言葉の力。",
-      baseMessage: "あなたの中には、すでに使える力や材料があります。今はそれを組み合わせて、形にしていくタイミングです。",
-      advice: "思いついたことをメモし、今日できる小さな作業に変えてください。言葉にすると現実が動きやすくなります。"
+      meaning: "始まり、工夫、才能、言葉の力。",
+      baseMessage: "魔術師のカードは、あなたの中にすでに使える力があることを示しています。言葉にする、形にする、試してみることで運が動き始めます。",
+      advice: "思いついたことを一つ、紙に書いたり誰かに伝えたりしてみましょう。"
     },
     reversed: {
-      meaning: "自信不足、空回り、言葉の行き違い。",
-      baseMessage: "できることはあるのに、自分で可能性を小さく見積もっているかもしれません。焦って見せようとしなくて大丈夫です。",
-      advice: "今日は無理に完璧に見せず、正直に伝えることを意識しましょう。言葉を整えるだけで流れが変わります。"
+      meaning: "自信不足、空回り、準備不足、伝え方のずれ。",
+      baseMessage: "魔術師の逆位置は、力はあるのにうまく出せていない状態を示しています。焦って見せようとするより、整えてから伝えるとよさそうです。",
+      advice: "今日は無理に完璧に見せず、正直でわかりやすい言葉を選びましょう。"
     }
   },
   {
@@ -32,13 +32,13 @@ const tarotCards = [
     image: "cards/02_high_priestess.png",
     upright: {
       meaning: "直感、静けさ、知性、内面の声。",
-      baseMessage: "答えは外側より、あなたの内側に静かにあります。すぐに動くより、感じていることを丁寧に見つめる時です。",
-      advice: "今日はひとりで落ち着ける時間を作りましょう。違和感や安心感を大切にしてください。"
+      baseMessage: "女教皇のカードは、静かな時間の中に答えがあることを示しています。外の声に振り回されず、自分の感覚を丁寧に見つめるとよさそうです。",
+      advice: "今日はひとりで落ち着ける時間を少し作りましょう。"
     },
     reversed: {
-      meaning: "考えすぎ、秘密、不安、心の閉じこもり。",
-      baseMessage: "本当はわかっている気持ちに、ふたをしている可能性があります。不安が大きい時ほど、答えを急がなくて大丈夫です。",
-      advice: "今日は誰かの意見を集めすぎないこと。静かな場所で、自分の本音を一つだけ書き出してみましょう。"
+      meaning: "考えすぎ、不安、心の閉じこもり、迷い。",
+      baseMessage: "女教皇の逆位置は、考えが多くなりすぎて本音が見えにくくなっている状態を示しています。答えを急がなくても大丈夫です。",
+      advice: "今日は情報を集めすぎず、自分の本音を一つだけ書き出してみましょう。"
     }
   },
   {
@@ -46,13 +46,13 @@ const tarotCards = [
     image: "cards/03_empress.png",
     upright: {
       meaning: "愛情、豊かさ、育てる力、安心感。",
-      baseMessage: "あなたのやさしさや魅力が、周囲に穏やかな影響を与えています。今は無理に急がず、育てることに運があります。",
-      advice: "今日は自分にも人にも、少し甘いくらいで大丈夫です。心地よいものを選ぶと運気が整います。"
+      baseMessage: "女帝のカードは、やさしさや豊かさが広がっていくことを示しています。無理に急がず、心地よいものを大切にすると運が整います。",
+      advice: "今日は自分を少し甘やかす時間を作ってください。"
     },
     reversed: {
-      meaning: "甘やかしすぎ、依存、疲れ、満たされなさ。",
-      baseMessage: "誰かのために頑張りすぎて、自分の心が置いてきぼりになっているかもしれません。",
-      advice: "今日は人に与える前に、自分を満たしましょう。休むことも立派な選択です。"
+      meaning: "疲れ、与えすぎ、依存、満たされなさ。",
+      baseMessage: "女帝の逆位置は、誰かのために頑張りすぎて自分が後回しになっていることを示しています。まず自分を満たすことが大切です。",
+      advice: "今日は人に与える前に、自分の休息を優先しましょう。"
     }
   },
   {
@@ -60,13 +60,13 @@ const tarotCards = [
     image: "cards/04_emperor.png",
     upright: {
       meaning: "安定、責任、計画、現実的な力。",
-      baseMessage: "今は感覚だけでなく、計画を立てることで安心が増える時です。土台を整えるほど、願いが現実に近づきます。",
-      advice: "今日は予定、予算、手順を見直しましょう。紙に書くと頭の中がすっきりします。"
+      baseMessage: "皇帝のカードは、土台を整えることで安心が生まれることを示しています。感覚だけでなく、計画や仕組みを作ると流れが安定します。",
+      advice: "今日は予定、家計、段取りを一つ見直してみましょう。"
     },
     reversed: {
-      meaning: "頑固、支配、不安定、責任の重さ。",
-      baseMessage: "全部を自分で背負おうとして、少し力が入りすぎているかもしれません。",
-      advice: "今日は一つだけ人に頼ることを考えてみましょう。柔らかさが状況を動かします。"
+      meaning: "頑固、抱え込み、支配、不安定さ。",
+      baseMessage: "皇帝の逆位置は、力が入りすぎている状態を示しています。すべてを自分だけで背負わなくても大丈夫です。",
+      advice: "今日は一つだけ人に頼ることを考えてみましょう。"
     }
   },
   {
@@ -74,12 +74,12 @@ const tarotCards = [
     image: "cards/05_hierophant.png",
     upright: {
       meaning: "信頼、学び、伝統、助言。",
-      baseMessage: "信頼できる人や、長く続いている方法にヒントがあります。ひとりで抱えず、知恵を借りるとよさそうです。",
-      advice: "今日は経験者の話を聞いたり、基本に戻ったりしてみましょう。王道の中に答えがあります。"
+      baseMessage: "教皇のカードは、信頼できる人や基本に戻ることが助けになることを示しています。ひとりで抱えず、知恵を借りると安心できそうです。",
+      advice: "今日は経験者の話や、長く続いている方法を参考にしてみましょう。"
     },
     reversed: {
       meaning: "思い込み、形式へのこだわり、窮屈さ。",
-      baseMessage: "常識や周りの期待に合わせすぎて、あなたらしい答えが見えにくくなっているかもしれません。",
+      baseMessage: "教皇の逆位置は、常識や周囲の期待に合わせすぎていることを示しています。あなたらしい答えを見直す時です。",
       advice: "今日は『本当にそうしなければいけない？』と一度問い直してみましょう。"
     }
   },
@@ -87,28 +87,28 @@ const tarotCards = [
     name: "恋人",
     image: "cards/06_lovers.png",
     upright: {
-      meaning: "選択、愛、調和、ときめき。",
-      baseMessage: "心が自然に向かうものの中に、今のあなたに必要な答えがあります。義務感より、納得感を大切にするとよさそうです。",
-      advice: "今日は好き、心地よい、安心するという感覚を信じて選んでみましょう。"
+      meaning: "選択、調和、心地よさ、ときめき。",
+      baseMessage: "恋人のカードは、心が自然に向かうものを選ぶ大切さを示しています。義務感より、納得感や心地よさを大切にするとよさそうです。",
+      advice: "今日は好き、安心する、心地よいという感覚を信じて選びましょう。"
     },
     reversed: {
-      meaning: "迷い、不一致、優柔不断、気持ちのすれ違い。",
-      baseMessage: "心ではわかっているのに、迷いが選択を難しくしているかもしれません。すぐに白黒つけなくても大丈夫です。",
-      advice: "今日は相手や周囲ではなく、自分が何を望むかを先に確認しましょう。"
+      meaning: "迷い、不一致、優柔不断、すれ違い。",
+      baseMessage: "恋人の逆位置は、心の中で迷いが生まれていることを示しています。すぐに答えを出さず、自分の本音を確認する時です。",
+      advice: "今日は周りの期待より、自分がどう感じているかを先に見つめましょう。"
     }
   },
   {
     name: "戦車",
     image: "cards/07_chariot.png",
     upright: {
-      meaning: "前進、行動、勝負、勢い。",
-      baseMessage: "今は流れが動きやすい時です。迷いを抱えたままでも、進みながら整えていけます。",
-      advice: "今日はひとつ行動を起こしてください。連絡する、申し込む、片付けるなど、具体的な一歩が吉です。"
+      meaning: "前進、行動、勢い、突破力。",
+      baseMessage: "戦車のカードは、流れが動きやすくなっていることを示しています。迷いを抱えたままでも、まず動くことで状況が見えてきます。",
+      advice: "今日は連絡する、片付ける、申し込むなど、具体的な行動を一つ選びましょう。"
     },
     reversed: {
-      meaning: "暴走、焦り、方向のずれ、疲れ。",
-      baseMessage: "頑張りたい気持ちはあるのに、進む方向が少し散らかっているかもしれません。",
-      advice: "今日はスピードを落として、優先順位を一つに絞りましょう。"
+      meaning: "焦り、暴走、方向のずれ、疲れ。",
+      baseMessage: "戦車の逆位置は、進みたい気持ちがある一方で、方向が少し散らかっていることを示しています。急ぐ前に整えることが必要です。",
+      advice: "今日は優先順位を一つに絞りましょう。"
     }
   },
   {
@@ -116,13 +116,13 @@ const tarotCards = [
     image: "cards/08_strength.png",
     upright: {
       meaning: "やさしい強さ、忍耐、信頼、内なる勇気。",
-      baseMessage: "今のあなたには、静かに乗り越える力があります。強く押すより、やさしく続けることが状況を変えます。",
+      baseMessage: "力のカードは、静かに続ける強さを示しています。強く押すより、やさしく向き合うことで状況が変わっていきます。",
       advice: "今日は無理に勝とうとせず、落ち着いて続けることを選びましょう。"
     },
     reversed: {
       meaning: "自信低下、我慢の限界、不安、消耗。",
-      baseMessage: "自分を責める気持ちが強くなっているかもしれません。弱さがあるからダメなのではなく、休息が必要なだけです。",
-      advice: "今日は自分に厳しい言葉を使わないこと。心が少し楽になる選択をしてください。"
+      baseMessage: "力の逆位置は、自分を責める気持ちや疲れが出やすいことを示しています。弱さではなく、休息が必要なサインです。",
+      advice: "今日は自分に厳しい言葉を使わず、少し楽になる選択をしてください。"
     }
   },
   {
@@ -130,13 +130,13 @@ const tarotCards = [
     image: "cards/09_hermit.png",
     upright: {
       meaning: "内省、探求、慎重さ、本質を見る力。",
-      baseMessage: "今はにぎやかな場所より、静かな時間の中に答えがあります。急ぐほど見えにくくなるので、ゆっくりで大丈夫です。",
-      advice: "今日は一人で考える時間を作り、必要なことと不要なことを分けてみましょう。"
+      baseMessage: "隠者のカードは、静かな時間の中で本当の答えが見えてくることを示しています。急ぐほど見えにくくなるので、ゆっくりで大丈夫です。",
+      advice: "今日は必要なことと不要なことを分けてみましょう。"
     },
     reversed: {
       meaning: "孤立、考え込みすぎ、視野の狭さ。",
-      baseMessage: "一人で抱え込みすぎて、答えが重たくなっている可能性があります。",
-      advice: "今日は信頼できる人に一言だけ話してみましょう。言葉にすると軽くなります。"
+      baseMessage: "隠者の逆位置は、一人で抱え込みすぎている状態を示しています。言葉にすると心が軽くなることもあります。",
+      advice: "今日は信頼できる人に一言だけ話してみましょう。"
     }
   },
   {
@@ -144,12 +144,12 @@ const tarotCards = [
     image: "cards/10_wheel_of_fortune.png",
     upright: {
       meaning: "転機、流れ、タイミング、チャンス。",
-      baseMessage: "状況が少しずつ動き始めています。思いがけない変化も、後から見ると必要な流れだったと感じられそうです。",
-      advice: "今日は変化を怖がりすぎず、来た話や誘いを一度受け止めてみましょう。"
+      baseMessage: "運命の輪のカードは、流れが少しずつ動き始めることを示しています。思いがけない変化も、必要なきっかけになりそうです。",
+      advice: "今日は来た話や誘いを、一度前向きに受け止めてみましょう。"
     },
     reversed: {
       meaning: "停滞、タイミングのずれ、流れに乗れない感覚。",
-      baseMessage: "今は無理に動かそうとしても、少し噛み合いにくいかもしれません。止まっている時間にも意味があります。",
+      baseMessage: "運命の輪の逆位置は、今は無理に動かそうとしても噛み合いにくいことを示しています。止まっている時間にも意味があります。",
       advice: "今日は急いで結論を出さず、準備と調整に使いましょう。"
     }
   },
@@ -158,13 +158,13 @@ const tarotCards = [
     image: "cards/11_justice.png",
     upright: {
       meaning: "公平、判断、バランス、誠実さ。",
-      baseMessage: "感情だけでなく、事実を見つめることで答えがはっきりしてきます。誠実な選択があなたを守ります。",
-      advice: "今日はメリットとデメリットを書き出しましょう。冷静に見るほど迷いが減ります。"
+      baseMessage: "正義のカードは、冷静に事実を見ることが助けになることを示しています。感情だけでなく、バランスを見直すと答えがはっきりします。",
+      advice: "今日はメリットとデメリットを書き出してみましょう。"
     },
     reversed: {
-      meaning: "偏り、不公平、判断ミス、納得できない気持ち。",
-      baseMessage: "どこかで無理に納得しようとしている可能性があります。心の中の違和感を無視しないでください。",
-      advice: "今日はすぐ決めず、事実確認をしましょう。曖昧なまま進めないことが大切です。"
+      meaning: "偏り、不公平、判断ミス、違和感。",
+      baseMessage: "正義の逆位置は、どこかで無理に納得しようとしていることを示しています。違和感を無視しないことが大切です。",
+      advice: "今日はすぐ決めず、事実確認を優先しましょう。"
     }
   },
   {
@@ -172,13 +172,13 @@ const tarotCards = [
     image: "cards/12_hanged_man.png",
     upright: {
       meaning: "待つこと、視点の転換、手放し、学び。",
-      baseMessage: "今は無理に動かすより、見方を変えることで道が見えてきます。止まっているようで、内側では大切な変化が起きています。",
-      advice: "今日は結論を急がず、別の角度から考えてみましょう。待つことも前進です。"
+      baseMessage: "吊るされた男のカードは、無理に動かすより見方を変えることで道が見えることを示しています。待つことも前進の一部です。",
+      advice: "今日は別の角度から考えてみましょう。"
     },
     reversed: {
       meaning: "報われない我慢、停滞、執着、疲れ。",
-      baseMessage: "必要以上に我慢していることがあるかもしれません。続けることだけが正解ではありません。",
-      advice: "今日は手放していい負担を一つ探してみましょう。"
+      baseMessage: "吊るされた男の逆位置は、必要以上に我慢していることを示しています。続けることだけが正解ではありません。",
+      advice: "今日は手放していい負担を一つ探しましょう。"
     }
   },
   {
@@ -186,13 +186,13 @@ const tarotCards = [
     image: "cards/13_death.png",
     upright: {
       meaning: "終わりと始まり、区切り、再生、整理。",
-      baseMessage: "何かを終わらせることで、新しい流れが入ってきます。怖いカードではなく、古い殻を脱ぐ合図です。",
-      advice: "今日は不要なもの、続けなくていい習慣を一つ手放してみましょう。"
+      baseMessage: "死神のカードは、古いものを手放すことで新しい流れが入ることを示しています。怖いカードではなく、区切りと再生の合図です。",
+      advice: "今日は不要なものや続けなくていい習慣を一つ手放してみましょう。"
     },
     reversed: {
       meaning: "変化への抵抗、未練、先延ばし。",
-      baseMessage: "本当は変えたいことを、まだ抱えたままにしているかもしれません。急に全部変えなくても大丈夫です。",
-      advice: "今日は小さな整理から始めましょう。まずは一つだけ終わらせること。"
+      baseMessage: "死神の逆位置は、本当は変えたいことをまだ抱えている状態を示しています。急に全部変えなくても大丈夫です。",
+      advice: "今日は小さな整理から始めましょう。"
     }
   },
   {
@@ -200,13 +200,13 @@ const tarotCards = [
     image: "cards/14_temperance.png",
     upright: {
       meaning: "調和、回復、自然な流れ、ほどよさ。",
-      baseMessage: "今は無理なく整えていくことが大切です。急激な変化より、少しずつ混ぜ合わせるような進み方が合っています。",
-      advice: "今日は睡眠、食事、予定のバランスを整えましょう。ほどほどが幸運を呼びます。"
+      baseMessage: "節制のカードは、無理なく整えていくことを示しています。急激な変化より、少しずつバランスを取ることが合っています。",
+      advice: "今日は予定、食事、休息のバランスを整えましょう。"
     },
     reversed: {
       meaning: "乱れ、無理、不調和、偏り。",
-      baseMessage: "生活や気持ちのバランスが少し崩れているかもしれません。頑張る前に整えることが必要です。",
-      advice: "今日は予定を詰め込みすぎないこと。余白を作ると心も戻ってきます。"
+      baseMessage: "節制の逆位置は、生活や気持ちのバランスが少し崩れていることを示しています。頑張る前に整えることが必要です。",
+      advice: "今日は予定を詰め込みすぎないようにしましょう。"
     }
   },
   {
@@ -214,12 +214,12 @@ const tarotCards = [
     image: "cards/15_devil.png",
     upright: {
       meaning: "執着、誘惑、依存、見ないふり。",
-      baseMessage: "やめたいのに気になること、離れたいのに離れにくいものがあるかもしれません。まず気づくことが第一歩です。",
+      baseMessage: "悪魔のカードは、気になって離れにくいものや繰り返している癖に気づくことを示しています。まず気づくことが第一歩です。",
       advice: "今日は自分を責めず、繰り返しているパターンを一つ観察してみましょう。"
     },
     reversed: {
       meaning: "解放、悪習慣からの離脱、目覚め。",
-      baseMessage: "あなたは少しずつ、縛られていたものから離れ始めています。完全でなくても、変化はもう始まっています。",
+      baseMessage: "悪魔の逆位置は、縛られていたものから少しずつ離れ始めていることを示しています。完全でなくても変化は始まっています。",
       advice: "今日は距離を置きたいものから、ほんの少し離れてみましょう。"
     }
   },
@@ -227,14 +227,14 @@ const tarotCards = [
     name: "塔",
     image: "cards/16_tower.png",
     upright: {
-      meaning: "急な変化、気づき、崩れる古い土台。",
-      baseMessage: "思い通りでない出来事が、実は本音に気づくきっかけになるかもしれません。壊れるものは、作り直せます。",
-      advice: "今日は予定外のことに慌てすぎず、まず安全な場所に立ち戻りましょう。"
+      meaning: "急な変化、気づき、古い土台の見直し。",
+      baseMessage: "塔のカードは、思い通りでない出来事が本音に気づくきっかけになることを示しています。壊れるものは作り直せます。",
+      advice: "今日は慌てすぎず、まず安全で落ち着ける場所に戻りましょう。"
     },
     reversed: {
       meaning: "変化の回避、小さな揺れ、先延ばし。",
-      baseMessage: "大きな変化を避けるために、小さなサインが出ている可能性があります。今なら穏やかに整えられます。",
-      advice: "今日は気になっていた問題を一つだけ直しましょう。小さな修正が大きな安心につながります。"
+      baseMessage: "塔の逆位置は、大きな変化を避けるための小さなサインが出ていることを示しています。今なら穏やかに整えられます。",
+      advice: "今日は気になっていた問題を一つだけ直しましょう。"
     }
   },
   {
@@ -242,12 +242,12 @@ const tarotCards = [
     image: "cards/17_star.png",
     upright: {
       meaning: "希望、癒し、未来への光、素直さ。",
-      baseMessage: "少し先に、明るい可能性が見えています。今は完璧でなくても、あなたの中の希望を消さないことが大切です。",
-      advice: "今日は未来の楽しみを一つ決めましょう。小さな希望が心を回復させます。"
+      baseMessage: "星のカードは、少し先に明るい可能性があることを示しています。今は完璧でなくても、希望を消さないことが大切です。",
+      advice: "今日は未来の楽しみを一つ決めてみましょう。"
     },
     reversed: {
       meaning: "希望を見失う、不安、理想疲れ。",
-      baseMessage: "理想と現実の差に疲れているかもしれません。でも、光が消えたわけではありません。",
+      baseMessage: "星の逆位置は、理想と現実の差に疲れていることを示しています。でも、光が消えたわけではありません。",
       advice: "今日は大きな夢より、今日できる安心を一つ選びましょう。"
     }
   },
@@ -256,13 +256,13 @@ const tarotCards = [
     image: "cards/18_moon.png",
     upright: {
       meaning: "不安、想像、曖昧さ、夢。",
-      baseMessage: "まだ全体がはっきり見えていない時です。不安が強いほど、事実と想像を分けることが大切になります。",
-      advice: "今日は夜に考えすぎないこと。気になることは紙に書いて、明るい時間に見直しましょう。"
+      baseMessage: "月のカードは、まだ全体がはっきり見えていないことを示しています。不安な時ほど、事実と想像を分けることが大切です。",
+      advice: "今日は夜に考えすぎず、気になることは紙に書いて明るい時間に見直しましょう。"
     },
     reversed: {
       meaning: "不安が晴れる、真実が見え始める、誤解の解消。",
-      baseMessage: "ぼんやりしていたことが、少しずつ見え始めています。焦らず確認すれば大丈夫です。",
-      advice: "今日は曖昧なことを一つ確認しましょう。聞く、調べる、見直すが助けになります。"
+      baseMessage: "月の逆位置は、ぼんやりしていたことが少しずつ見え始めていることを示しています。焦らず確認すれば大丈夫です。",
+      advice: "今日は曖昧なことを一つ確認しましょう。"
     }
   },
   {
@@ -270,13 +270,13 @@ const tarotCards = [
     image: "cards/19_sun.png",
     upright: {
       meaning: "喜び、成功、明るさ、素直な表現。",
-      baseMessage: "明るい流れが入っています。あなたらしさを隠さず出すことで、良い反応が返ってきやすい日です。",
-      advice: "今日は笑顔で伝えることを意識しましょう。シンプルで明るい行動が運を呼びます。"
+      baseMessage: "太陽のカードは、明るい流れが入っていることを示しています。あなたらしさを隠さず出すことで、良い反応が返ってきやすい日です。",
+      advice: "今日は笑顔で伝えることを意識しましょう。"
     },
     reversed: {
       meaning: "元気不足、素直になれない、小さな停滞。",
-      baseMessage: "本来の明るさが少し雲に隠れているだけです。無理に元気に見せなくても大丈夫です。",
-      advice: "今日は体を温めたり、外の光を浴びたりして、心を少しずつ起こしましょう。"
+      baseMessage: "太陽の逆位置は、本来の明るさが少し雲に隠れている状態を示しています。無理に元気に見せなくても大丈夫です。",
+      advice: "今日は体を温めたり、外の光を浴びたりして心を起こしましょう。"
     }
   },
   {
@@ -284,13 +284,13 @@ const tarotCards = [
     image: "cards/20_judgement.png",
     upright: {
       meaning: "復活、再挑戦、目覚め、知らせ。",
-      baseMessage: "過去に止まっていたことが、もう一度動き出す可能性があります。諦めたことにも新しい形がありそうです。",
-      advice: "今日は昔のメモ、連絡先、計画を見直してみましょう。再開のヒントがあります。"
+      baseMessage: "審判のカードは、過去に止まっていたことがもう一度動き出す可能性を示しています。諦めたことにも新しい形がありそうです。",
+      advice: "今日は昔のメモや計画を見直してみましょう。"
     },
     reversed: {
       meaning: "ためらい、過去へのこだわり、決断の遅れ。",
-      baseMessage: "もう進めるのに、自分でブレーキをかけている可能性があります。過去を責めなくて大丈夫です。",
-      advice: "今日は『次にどうするか』だけを考えましょう。過去の答え合わせは少し休んでください。"
+      baseMessage: "審判の逆位置は、もう進めるのに自分でブレーキをかけていることを示しています。過去を責めなくて大丈夫です。",
+      advice: "今日は『次にどうするか』だけを考えてみましょう。"
     }
   },
   {
@@ -298,222 +298,260 @@ const tarotCards = [
     image: "cards/21_world.png",
     upright: {
       meaning: "完成、達成、統合、次のステージ。",
-      baseMessage: "ひとつの流れがまとまりつつあります。ここまでの経験は無駄ではなく、次の場所へ進む土台になっています。",
-      advice: "今日はできたことを認めましょう。一区切りをつけると、新しい扉が開きます。"
+      baseMessage: "世界のカードは、一つの流れがまとまりつつあることを示しています。ここまでの経験は、次の場所へ進む土台になります。",
+      advice: "今日はできたことを認めて、一区切りをつけましょう。"
     },
     reversed: {
       meaning: "未完成、あと一歩、区切りがつかない状態。",
-      baseMessage: "ゴールは近いのに、最後の整理が残っているかもしれません。焦らず仕上げれば大丈夫です。",
-      advice: "今日は途中のままになっていることを一つ終わらせましょう。小さな完了が運を整えます。"
+      baseMessage: "世界の逆位置は、ゴールが近いのに最後の整理が残っていることを示しています。焦らず仕上げれば大丈夫です。",
+      advice: "今日は途中のままになっていることを一つ終わらせましょう。"
     }
   }
 ];
 
 const readingTypes = {
-  feelings: {
-    label: "あの人の気持ちは？",
-    resultTitle: "あの人の気持ち",
-    messageHeading: "あの人があなたに感じていること",
-    shuffleText: "リリンとリンが、あの人の心に近いカードを選んでいます。心が落ち着いたら Stop を押してください。",
-    createMessage(card, data, directionText) {
-      if (directionText === "正位置") {
-        return `${card.name}のカードは、あの人の中にある自然な印象を表しています。あなたに対して、どこか話しやすさや気になる感覚を持っている可能性があります。まだはっきりした恋心として形になっていなくても、あなたの存在は相手の心に残りやすいようです。急に距離を詰めるより、安心して接する時間を増やすことで、関係は少しずつやわらかく育っていきそうです。`;
-      }
-
-      return `${card.name}の逆位置は、あの人の気持ちがまだ整理されていないことを示しています。嫌われているというより、相手自身が迷っていたり、どう接してよいか決めきれていないのかもしれません。今は強く確かめようとするより、相手が自然に心を開ける距離感を大切にするとよいでしょう。`;
-    },
-    createAdvice(card, data, directionText) {
-      if (directionText === "正位置") {
-        return "今日は明るく、でも押しすぎない接し方がよさそうです。短い会話や自然な気遣いが、相手の中に良い印象を残します。";
-      }
-
-      return "今日は相手の反応を急いで読み取ろうとしすぎないでください。返事の速さや態度だけで判断せず、落ち着いた距離感を保つことが大切です。";
-    }
+  daily: {
+    label: "今日のわたしへの一枚",
+    resultTitle: "今日のわたしへの一枚",
+    messageHeading: "今日のあなたへのメッセージ"
   },
-
-  marriage: {
-    label: "婚期はいつ？",
-    resultTitle: "結婚につながる流れ",
-    messageHeading: "婚期に向けた今の流れ",
-    shuffleText: "リリンとリンが、結婚につながるタイミングのカードを選んでいます。心が落ち着いたら Stop を押してください。",
-    createMessage(card, data, directionText) {
-      if (directionText === "正位置") {
-        return `${card.name}のカードは、結婚に向けた流れが少しずつ動き出していることを示しています。婚期は、ただ待つだけでなく、あなたの心が未来に向いたときに近づいてきます。今は出会いや関係を難しく考えすぎず、自然に安心できる人とのつながりを大切にするとよい時期です。`;
-      }
-
-      return `${card.name}の逆位置は、婚期を遠ざけている原因が、環境や相手だけではなく、あなた自身の迷いや条件の多さにもあることを示しています。焦って決める必要はありませんが、過去の恋や理想像に縛られすぎると、目の前のご縁が見えにくくなるかもしれません。`;
-    },
-    createAdvice(card, data, directionText) {
-      if (directionText === "正位置") {
-        return "今日は理想の結婚生活を、条件ではなく気持ちで書き出してみましょう。どんな人といると安心できるかを考えることが、婚期を近づける一歩になります。";
-      }
-
-      return "今日は結婚への不安やこだわりを整理してみましょう。絶対に譲れないことと、手放してよい条件を分けると、ご縁の入口が広がります。";
-    }
+  relationship: {
+    label: "人間関係を心地よくするには？",
+    resultTitle: "人間関係を心地よくするヒント",
+    messageHeading: "人付き合いをやわらかくするために"
   },
-
-  reunion: {
-    label: "復縁できる？",
-    resultTitle: "復縁の可能性",
-    messageHeading: "復縁に向けた今の流れ",
-    shuffleText: "リリンとリンが、復縁に向けた今の流れをカードで見ています。心が落ち着いたら Stop を押してください。",
-    createMessage(card, data, directionText) {
-      if (directionText === "正位置") {
-        return `${card.name}のカードは、復縁に向けてまだ可能性が残っていることを示しています。ただし、無理に答えを急ぐより、関係を穏やかに整え直すことが大切です。相手の気持ちを動かす鍵は、強く迫ることではなく、以前より落ち着いたあなたを見せることにありそうです。`;
-      }
-
-      return `${card.name}の逆位置は、今すぐ復縁を迫るには少しタイミングが難しいことを示しています。相手の心が閉じていたり、過去の出来事がまだ整理されていない可能性があります。今は追いかけるより、自分の気持ちを整え、相手が安心できる空気を取り戻す準備の時期です。`;
-    },
-    createAdvice(card, data, directionText) {
-      if (directionText === "正位置") {
-        return "今日は短く穏やかな連絡や、相手を責めない姿勢を意識してください。復縁のきっかけは、安心感の中から生まれやすいです。";
-      }
-
-      return "今日は連絡を急がず、自分の生活を整えることを優先しましょう。冷静さを取り戻すほど、次のタイミングが見えやすくなります。";
-    }
-  },
-
   money: {
     label: "金運が上がる時期はいつ？",
     resultTitle: "金運が上がる流れ",
-    messageHeading: "お金の流れが良くなるタイミング",
-    shuffleText: "リリンとリンが、あなたの金運の流れをカードで見ています。心が落ち着いたら Stop を押してください。",
-    createMessage(card, data, directionText) {
-      if (directionText === "正位置") {
-        return `${card.name}のカードは、金運が上向きに整いやすい流れを示しています。大きな幸運をただ待つより、今あるお金の使い方や、仕事での動き方を見直すことで流れが良くなりそうです。収入のチャンスは、行動した人に届きやすい時です。`;
-      }
-
-      return `${card.name}の逆位置は、金運が一時的に停滞していたり、支出や判断に注意が必要なことを示しています。焦って増やそうとするより、まずは出ていくお金の流れを整えることが大切です。小さな見直しが、後の金運アップにつながります。`;
-    },
-    createAdvice(card, data, directionText) {
-      if (directionText === "正位置") {
-        return "今日は収入を増やす行動を一つ選んでみましょう。仕事の提案、不要品の整理、価格の見直しなど、現実的な一歩が金運を動かします。";
-      }
-
-      return "今日は衝動買いや勢いでの契約を避けましょう。支出を一つ見直すだけでも、お金の流れが整い始めます。";
-    }
+    messageHeading: "お金の流れが良くなるタイミング"
   },
-
-  work: {
-    label: "今の仕事は私に向いている？",
-    resultTitle: "今の仕事との相性",
-    messageHeading: "仕事に対する今の答え",
-    shuffleText: "リリンとリンが、今の仕事とあなたの相性をカードで見ています。心が落ち着いたら Stop を押してください。",
-    createMessage(card, data, directionText) {
-      if (directionText === "正位置") {
-        return `${card.name}のカードは、今の仕事の中にあなたが活かせる力があることを示しています。すべてが楽というわけではなくても、経験を重ねることで自分の強みが育っていく可能性があります。今の仕事に意味を感じられる部分があるなら、そこを伸ばしていく価値がありそうです。`;
-      }
-
-      return `${card.name}の逆位置は、今の仕事に対して無理をしている部分や、本音とのずれがあることを示しています。向いていないと決めつける必要はありませんが、疲れの原因や、本当はやりたいことを見直す時期に来ているのかもしれません。`;
-    },
-    createAdvice(card, data, directionText) {
-      if (directionText === "正位置") {
-        return "今日は今の仕事で得られている力を一つ書き出してみましょう。続ける理由が見えると、働き方を前向きに整えやすくなります。";
-      }
-
-      return "今日は無理を感じている点を整理しましょう。仕事内容、人間関係、働く時間のどこが苦しいのかを分けて考えると、次の道が見えやすくなります。";
-    }
+  flow: {
+    label: "これからの流れ",
+    resultTitle: "これからの流れ",
+    messageHeading: "これから意識したいこと"
+  },
+  relief: {
+    label: "近々、人付き合いは楽になる？",
+    resultTitle: "人付き合いが楽になる流れ",
+    messageHeading: "心が軽くなるためのヒント"
   }
 };
 
-const homeScreen = document.getElementById("homeScreen");
-const shuffleScreen = document.getElementById("shuffleScreen");
-const resultScreen = document.getElementById("resultScreen");
+const extraResults = {
+  daily: {
+    upright: [
+      "今日は、目の前のことを丁寧に扱うほど運が整います。",
+      "気持ちがふっと軽くなる小さな出来事が、今日のあなたを助けてくれそうです。",
+      "急ぐよりも、味わう時間が必要です。穏やかな選択がよい流れを呼びます。",
+      "今日は自分のペースを大切にすると、思った以上に物事が進みやすくなります。"
+    ],
+    reversed: [
+      "今日は少し疲れが出やすいかもしれません。無理に元気を出そうとしなくて大丈夫です。",
+      "予定を詰め込みすぎると、心が窮屈になりそうです。余白を作ることが運を守ります。",
+      "気持ちがまとまらない時は、考えることを一度休ませましょう。",
+      "今日は人のペースに引っ張られすぎないことが大切です。"
+    ]
+  },
+  relationship: {
+    upright: [
+      "相手に合わせすぎず、あなたが自然でいられる関わり方を選ぶと、人間関係がやわらぎます。",
+      "今日は短い言葉でも、やさしい気持ちが伝わりやすい日です。",
+      "無理に距離を縮めるより、穏やかな空気を保つことが関係を心地よくします。",
+      "人とのつながりの中に、小さな助けや気づきがありそうです。"
+    ],
+    reversed: [
+      "気を使いすぎて、少し疲れが出ているかもしれません。距離を取ることも大切です。",
+      "今日は無理に仲良くしようとしなくて大丈夫です。静かに過ごす選択も良い選択です。",
+      "相手の言葉を深く受け止めすぎると、心が重くなりそうです。",
+      "人の機嫌を背負いすぎないでください。あなたの責任ではないこともあります。"
+    ]
+  },
+  money: {
+    upright: [
+      "金運は、身近な見直しから上がりやすい流れです。無理な勝負より、整えることが近道です。",
+      "今ある収入や支出を丁寧に見ることで、次のチャンスに気づきやすくなります。",
+      "お金の流れは少しずつ上向きです。行動したことが後から実りやすいでしょう。",
+      "小さな節約や価格の見直しが、思った以上に良い流れを作ります。"
+    ],
+    reversed: [
+      "今は勢いでお金を動かすより、守る意識が大切です。",
+      "支出の小さな積み重ねが気になりやすい時です。見直すだけでも流れは変わります。",
+      "焦って増やそうとすると、かえって迷いが生まれそうです。",
+      "今日は大きな買い物や契約は慎重に考えましょう。"
+    ]
+  },
+  flow: {
+    upright: [
+      "これからの流れは、少しずつ明るい方向へ向かっています。焦らず準備を続けましょう。",
+      "今すぐ大きく変わらなくても、静かに次の場面へ移っていく気配があります。",
+      "人や予定の流れが、自然にあなたを次の場所へ運んでくれそうです。",
+      "小さなきっかけが、後から大きな変化につながる可能性があります。"
+    ],
+    reversed: [
+      "これからの流れに入る前に、少し整理が必要です。",
+      "焦って変えようとすると、かえって疲れてしまいそうです。",
+      "今は準備の時期です。見えないところを整えるほど、あとで楽になります。",
+      "流れが止まって見えても、内側では次の準備が進んでいます。"
+    ]
+  },
+  relief: {
+    upright: [
+      "人付き合いの重たさは、少しずつやわらいでいきそうです。",
+      "あなたが無理をしない距離を選ぶことで、心が軽くなっていきます。",
+      "近いうちに、話しやすい空気や安心できる関係が戻ってくる可能性があります。",
+      "頑張りすぎていた関係に、少しずつ風通しが生まれそうです。"
+    ],
+    reversed: [
+      "今はまだ、人付き合いに疲れを感じやすいかもしれません。",
+      "すぐに楽になろうと無理をすると、余計に心が重くなることがあります。",
+      "相手の言葉を全部受け止めなくて大丈夫です。",
+      "関係を急いで直そうとせず、あなたの心が落ち着く時間を優先しましょう。"
+    ]
+  }
+};
 
-const readingButtons = document.querySelectorAll(".reading-button");
-const stopBtn = document.getElementById("stopBtn");
-const againBtn = document.getElementById("againBtn");
+const extraAdvice = {
+  daily: [
+    "温かい飲み物をゆっくり飲む時間を作ってみましょう。",
+    "今日は予定を一つ軽くして、自分のための余白を作りましょう。",
+    "好きな香り、好きな音、好きな景色を一つ選んで心を整えましょう。",
+    "自分を責める言葉を、今日は一つ減らしてみましょう。"
+  ],
+  relationship: [
+    "短くても、やわらかい言葉を一つ選んでみましょう。",
+    "苦手な人とは、近すぎず遠すぎずの距離を意識しましょう。",
+    "返事を急がず、心が落ち着いてから向き合って大丈夫です。",
+    "無理な約束はせず、できる範囲で関わりましょう。"
+  ],
+  money: [
+    "今日使う予定のお金を一度書き出してみましょう。",
+    "買う前に一晩考えるルールを作ると金運が整います。",
+    "不要なものを一つ手放すと、お金の流れにも余白が生まれます。",
+    "収入を増やす小さな工夫を一つ考えてみましょう。"
+  ],
+  flow: [
+    "先の心配を一度置いて、今日できる準備を一つ進めましょう。",
+    "予定を見直して、詰まりすぎているところに余白を作りましょう。",
+    "気になっていた小さな用事を一つ片付けましょう。",
+    "急がず、順番を決めることから始めましょう。"
+  ],
+  relief: [
+    "今日は気を使いすぎる場面を一つ減らしてみましょう。",
+    "人と会った後は、ひとりで休む時間を作りましょう。",
+    "返事をすぐ返さなくても大丈夫です。落ち着いてからで十分です。",
+    "自然体でいられる人との時間を大切にしましょう。"
+  ]
+};
 
-const shuffleText = document.getElementById("shuffleText");
-const resultCategoryLabel = document.getElementById("resultCategoryLabel");
-const resultTitle = document.getElementById("resultTitle");
-const messageHeading = document.getElementById("messageHeading");
+document.addEventListener("DOMContentLoaded", function () {
+  const homeScreen = document.getElementById("homeScreen");
+  const shuffleScreen = document.getElementById("shuffleScreen");
+  const resultScreen = document.getElementById("resultScreen");
 
-const resultCardImage = document.getElementById("resultCardImage");
-const cardName = document.getElementById("cardName");
-const cardDirection = document.getElementById("cardDirection");
-const cardMeaning = document.getElementById("cardMeaning");
-const cardMessage = document.getElementById("cardMessage");
-const cardAdvice = document.getElementById("cardAdvice");
+  const readingButtons = document.querySelectorAll(".reading-button");
+  const stopBtn = document.getElementById("stopBtn");
+  const againBtn = document.getElementById("againBtn");
 
-let selectedCard = null;
-let selectedDirection = "upright";
-let selectedReadingKey = "feelings";
+  const resultCategoryLabel = document.getElementById("resultCategoryLabel");
+  const resultTitle = document.getElementById("resultTitle");
+  const messageHeading = document.getElementById("messageHeading");
 
-function showScreen(screen) {
-  homeScreen.classList.remove("active");
-  shuffleScreen.classList.remove("active");
-  resultScreen.classList.remove("active");
+  const resultCardImage = document.getElementById("resultCardImage");
+  const cardName = document.getElementById("cardName");
+  const cardDirection = document.getElementById("cardDirection");
+  const cardMeaning = document.getElementById("cardMeaning");
+  const cardMessage = document.getElementById("cardMessage");
+  const cardAdvice = document.getElementById("cardAdvice");
 
-  screen.classList.add("active");
+  let selectedCard = null;
+  let selectedDirection = "upright";
+  let selectedReadingKey = "daily";
 
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-function pickCard() {
-  const cardIndex = Math.floor(Math.random() * tarotCards.length);
-  const isReversed = Math.random() < 0.5;
-
-  selectedCard = tarotCards[cardIndex];
-  selectedDirection = isReversed ? "reversed" : "upright";
-}
-
-function startReading(readingKey) {
-  selectedReadingKey = readingKey;
-  const reading = readingTypes[selectedReadingKey];
-
-  pickCard();
-
-  shuffleText.innerHTML = `${reading.shuffleText}`;
-  showScreen(shuffleScreen);
-}
-
-function stopShuffle() {
-  if (!selectedCard) {
-    pickCard();
+  function randomItem(list) {
+    return list[Math.floor(Math.random() * list.length)];
   }
 
-  const reading = readingTypes[selectedReadingKey];
-  const data = selectedCard[selectedDirection];
-  const directionText = selectedDirection === "upright" ? "正位置" : "逆位置";
+  function showScreen(screen) {
+    homeScreen.classList.remove("active");
+    shuffleScreen.classList.remove("active");
+    resultScreen.classList.remove("active");
+    screen.classList.add("active");
 
-  resultCategoryLabel.textContent = reading.label;
-  resultTitle.textContent = reading.resultTitle;
-  messageHeading.textContent = reading.messageHeading;
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
 
-  resultCardImage.src = selectedCard.image;
-  resultCardImage.alt = `${selectedCard.name}のカード`;
-  resultCardImage.classList.toggle("reversed", selectedDirection === "reversed");
+  function pickCard() {
+    const cardIndex = Math.floor(Math.random() * tarotCards.length);
+    const isReversed = Math.random() < 0.5;
 
-  cardName.textContent = selectedCard.name;
-  cardDirection.textContent = directionText;
-  cardMeaning.textContent = data.meaning;
-  cardMessage.textContent = reading.createMessage(selectedCard, data, directionText);
-  cardAdvice.textContent = reading.createAdvice(selectedCard, data, directionText);
+    selectedCard = tarotCards[cardIndex];
+    selectedDirection = isReversed ? "reversed" : "upright";
+  }
 
-  showScreen(resultScreen);
-}
+  function startReading(readingKey) {
+    selectedReadingKey = readingKey || "daily";
+    pickCard();
+    showScreen(shuffleScreen);
+  }
 
-function backToHome() {
-  selectedCard = null;
-  selectedDirection = "upright";
-  selectedReadingKey = "feelings";
+  function stopShuffle() {
+    if (!selectedCard) {
+      pickCard();
+    }
 
-  resultCardImage.src = "";
-  resultCardImage.classList.remove("reversed");
+    const reading = readingTypes[selectedReadingKey] || readingTypes.daily;
+    const resultPool = extraResults[selectedReadingKey] || extraResults.daily;
+    const advicePool = extraAdvice[selectedReadingKey] || extraAdvice.daily;
 
-  showScreen(homeScreen);
-}
+    const data = selectedCard[selectedDirection];
+    const directionText = selectedDirection === "upright" ? "正位置" : "逆位置";
+    const extraMessage = randomItem(resultPool[selectedDirection]);
+    const adviceMessage = randomItem(advicePool);
 
-readingButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const readingKey = button.dataset.reading;
-    startReading(readingKey);
+    resultCategoryLabel.textContent = reading.label;
+    resultTitle.textContent = reading.resultTitle;
+    messageHeading.textContent = reading.messageHeading;
+
+    resultCardImage.src = selectedCard.image;
+    resultCardImage.alt = selectedCard.name + "のカード";
+    resultCardImage.classList.toggle("reversed", selectedDirection === "reversed");
+
+    cardName.textContent = selectedCard.name;
+    cardDirection.textContent = directionText;
+    cardMeaning.textContent = data.meaning;
+    cardMessage.textContent = data.baseMessage + " " + extraMessage;
+    cardAdvice.textContent = data.advice + " " + adviceMessage;
+
+    showScreen(resultScreen);
+  }
+
+  function backToHome() {
+    selectedCard = null;
+    selectedDirection = "upright";
+    selectedReadingKey = "daily";
+
+    resultCardImage.src = "";
+    resultCardImage.classList.remove("reversed");
+
+    showScreen(homeScreen);
+  }
+
+  readingButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      startReading(button.dataset.reading);
+    });
   });
-});
 
-stopBtn.addEventListener("click", stopShuffle);
-againBtn.addEventListener("click", backToHome);
+  if (stopBtn) {
+    stopBtn.addEventListener("click", stopShuffle);
+  }
+
+  if (againBtn) {
+    againBtn.addEventListener("click", backToHome);
+  }
+
+  window.stopShuffle = stopShuffle;
+});
